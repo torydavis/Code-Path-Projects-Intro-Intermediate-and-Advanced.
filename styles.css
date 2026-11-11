@@ -1,0 +1,598 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+
+    background-color: #ec9c6b;
+    color: #42352d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 70px 20px 20px;
+    line-height: 1.6;
+}
+
+.site-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #684b3c;
+    padding: 1px;
+    box-shadow: 0 3px 8px #00000020;
+}
+
+.site-navigation ol {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    list-style: none;
+}
+
+.site-navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.site-navigation a:hover {
+    background-color: #f3bd7b;
+    color: #42352d;
+}
+
+.site-navigation a:active {
+    background-color: #e6a65c;
+}
+
+.site-navigation a:visited {
+    color: #f9dfbd;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+#header-img,
+#header-img-two {
+    display: block;
+    width: 250px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 4px solid #e8b77d;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #00000020;
+}
+
+.header-button,
+.header-button-two {
+background-color: #34766d;
+color: white;
+font-size: 15px;
+padding: 12px 16px;
+margin: 0;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.header-buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.header-button:hover,
+.header-button-two:hover {
+background-color: #24564f;
+    color: white;
+
+}
+
+.header-button:active,
+.header-button-two:active {
+    background-color: #e6a65c;
+}
+
+.header-buttons form {
+margin: 0;
+
+}
+.header-item h1,
+.header-item h2 {
+    text-align: center;
+    margin: 10px 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.Rito {
+    color: #bd7927;
+}
+
+.Big-Paw {
+    color: #777777;
+}
+
+
+.header-item:nth-of-type(1) {
+    width: 45%;
+}
+
+.header-item:nth-of-type(2) {
+    width: 45%;
+    text-align: center;
+}
+
+
+h1 {
+    color: #684b3c;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    color: #34766d;
+    text-align: center;
+    font-size: 26px;
+}
+
+h3 {
+    color: #8b4b35;
+    text-align: center;
+    font-size: 22px;
+}
+
+h4, h5 {
+    color: #684b3c;
+    text-align: center;
+    font-size: 18px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.7;
+    margin: 15px auto;
+    max-width: 850px;
+}
+
+#adoption-paragraph {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f6e4ce;
+    border: 2px solid #e8c49a;
+    border-radius: 15px;
+}
+
+#adoption-paragraph,
+body > ul {
+    line-height: 1.8;
+}
+
+ul {
+    max-width: 850px;
+    margin: 15px auto;
+    padding-left: 35px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #276e66;
+}
+
+a:hover {
+    color: #a54c32;
+}
+.flexbox-of-dogs{   
+    display:flex;
+   justify-content:center;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+#world-dog-day,
+img[alt="World-Dog-Day"] {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 3px solid #e8b77d;
+}
+#furever,
+img[alt="Furever-Paw-Prints"]{
+ display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 3px solid #e8b77d;
+}
+#tricks, img[alt="tricks-treats-frenchie-feets"]{
+     display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 3px solid #e8b77d;
+}
+
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+input {
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    padding: 12px;
+    margin: 10px auto;
+    border: 1px solid #c8b8a7;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #34766d;
+}
+.block {
+    display: block;
+    max-width: 500px;
+    margin: 20px auto;
+    color: #42352d;
+    text-decoration: none;
+}
+
+.block article {
+    background-color: #f6e4ce;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e8c49a;
+}
+
+.block:hover article {
+    background-color: #f0d4b2;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    min-height: 0;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #684b3c;
+    color: white;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.footer h1 {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+.footer a {
+    color: #f9dfbd;
+}
+
+#theme-button {
+    background-color: #8b4f0b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-button:hover {
+    background-color: #ffb347;
+    color: #242424;
+}
+
+body.dark-mode {
+    background-color: #1b0502;
+    color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .site-navigation,
+body.dark-mode .footer {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+body.dark-mode .site-navigation a:hover {
+    background-color: #ff8c00;
+    color: #171717;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+    color: #ff9f43;
+}
+
+body.dark-mode #adoption-paragraph,
+body.dark-mode .block article {
+    background-color: #333333;
+    color: #f5f5f5;
+    border: 2px solid #d97706;
+}
+
+body.dark-mode article,
+body.dark-mode section {
+    color: #f5f5f5;
+}
+
+body.dark-mode a {
+    color: #ffb347;
+}
+
+body.dark-mode a:hover {
+    color: #ffd08a;
+}
+
+body.dark-mode input {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #ff9f43;
+}
+
+body.dark-mode #theme-button {
+    background-color: #ff8c00;
+    color: #171717;
+    border-color: #ffb347;
+}
+
+body.dark-mode #header-img,
+body.dark-mode #header-img-two,
+body.dark-mode #world-dog-day,
+body.dark-mode #furever,
+body.dark-mode #tricks {
+    border-color: #ff8c00;
+}
+
+
+.rsvp-para{
+    width:55%;
+    padding-right:10px;
+}
+.rsvp-participants{
+    width:45%;
+    padding-right:10px;
+}
+.rsvp-container {
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    width:100%;
+    padding-bottom:5px;
+
+
+}
+input.error {
+    border: 3px solid red;
+    background-color: #ffe0e0;
+    color: #42352d;
+}
+
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+#rsvp-count {
+    font-weight: bold;
+    color: #34766d;
+    text-align: center;
+    border-top: 2px solid #e8b77d;
+    padding-top: 10px;
+}
+
+#rsvp-button {
+    background-color: #34766d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#rsvp-button:hover {
+    background-color: #24564f;
+}
+
+body.dark-mode #rsvp-count {
+    color: #ffb347;
+}
+
+body.dark-mode input.error {
+    border: 3px solid #ff4444;
+    background-color: #542525;
+    color: white;
+}
+
+
+.revealable {
+    --reveal-distance: 150px;
+
+    scroll-margin-top: 100px;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    position: relative;
+    transform: translateY(var(--reveal-distance));
+}
+
+.active {
+    scroll-margin-top: 100px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#reduce-motion-button {
+   display: block;
+    text-align: center;
+    padding: 10px 15px;
+  background-color: transparent;
+    color:#f3bd7b;
+    transition: background-color 0.3s, color 0.3s;
+     border: none;
+      margin: 0;
+}
+
+#reduce-motion-button:hover {
+    background-color: #f3bd7b;
+    color: #42352d;
+}
+
+#reduce-motion-button:active {
+    background-color: #e6a65c;
+}
+
+body.dark-mode #reduce-motion-button:hover {
+    background-color: #ff8c00;
+    color: #171717;
+}
+
+body.dark-mode #reduce-motion-button:active {
+    background-color: #e6a65c;
+}
+
+body.reduce-motion .revealable {
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+
+body.reduce-motion .active {
+    opacity: 1;
+    transform: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #f6e4ce;
+    color: #42352d;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    border: 3px solid #e8b77d;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000050;
+}
+
+.modal-content h2 {
+    color: #34766d;
+    margin-top: 10px;
+}
+
+#modal-message {
+    text-align: center;
+    font-weight: bold;
+}
+
+#modal-picture {
+    width: 160px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #e8b77d;
+    transition: transform 0.3s ease;
+}
+
+#close-modal-button {
+    background-color: #34766d;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#close-modal-button:hover {
+    background-color: #24564f;
+}
+
+#close-modal-button:active {
+    background-color: #e6a65c;
+}
+
+body.dark-mode .modal-content {
+    background-color: #333333;
+    color: white;
+    border-color: #ff8c00;
+}
+
+body.dark-mode .modal-content h2 {
+    color: #ff9f43;
+}
+
+body.reduce-motion #modal-picture {
+    transform: none !important;
+    transition: none;
+}
